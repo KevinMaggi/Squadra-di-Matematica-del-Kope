@@ -10,7 +10,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3.3"
 
 # Minimal Mistakes theme
-gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll", "~> 4.26.2"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
