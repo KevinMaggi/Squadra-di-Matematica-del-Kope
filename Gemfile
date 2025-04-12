@@ -9,8 +9,8 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.3"
 
-# TeXt theme
-gem "jekyll-text-theme", "~> 2.2.6"
+# Minimal Mistakes theme
+gem "minimal-mistakes-jekyll"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

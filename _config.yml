@@ -15,11 +15,7 @@ plugins:
   - jekyll-compose
 
 # Theme settings
-theme: jekyll-text-theme
-text_skin: ocean
-
-lang: it
-timezone: CET
+theme: minimal-mistakes-jekyll
 
 
 # Exclude from processing.
@@ -44,3 +40,21 @@ timezone: CET
 
 
 include: ["_pages"]
+
+# ---------------
+# Minimal Mistakes theme configuration
+# ---------------
+
+# Skin
+minimal_mistakes_skin: "default"
+
+# Language and timezone
+locale: "it-IT"
+timezone: Europe/Rome
+
+# General info
+# title: "Kevin Maggi" # Specified above in Jekyll configurations
+title_separator: "|"
+#subtitle: ""
+name: "Squadra di Matematica del Kope"
+repository: "KevinMaggi/Squadra-di-Matematica-del-Kope"
