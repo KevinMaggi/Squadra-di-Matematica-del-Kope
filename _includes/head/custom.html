@@ -1,3 +1,34 @@
+{%- comment -%} Custom breadcrumbs styling using Liquid, necessary hambuger-menu button styling due to customization for HTML-validity, logo-title stilying necessary to avoid double link, toc heading for accessibility reason {%- endcomment -%}
+<style>
+    .breadcrumb-item:not(:first-child)::before {
+        content: " {{ site.data.ui-text[site.locale].breadcrumb_separator }} ";
+    }
+    
+    .masthead #site-nav .navicon {
+        display: block;
+    }
+    
+    .masthead #site-nav a#site-brand {
+        display: flex;
+        margin: 0;
+    }
+    .masthead #site-nav a#site-brand img.site-logo {
+        margin: 0 0.5rem 0 0;
+        object-fit: contain;
+        width: 50px;
+    }
+    .masthead #site-nav a#site-brand div.site-title {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem 0 0;
+    }
+    
+    .sidebar__right .toc .nav__title {
+        margin: 0;
+        line-height: 1;
+    }
+</style>
+
 {%- comment -%} Favicon and icons {%- endcomment -%}
 <link rel="icon" type="image/png" href="/assets/images/favicon/3-10/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/3-10/favicon.svg" />

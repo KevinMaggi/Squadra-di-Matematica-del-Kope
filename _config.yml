@@ -1,4 +1,22 @@
-# https://kitian616.github.io/jekyll-TeXt-theme/docs/en/quick-start
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
 # Site general settings
 title: Squadra di Matematica del Kope
@@ -8,14 +26,14 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: # "/Squadra-di-Matematica-del-Kope"
 url: "https://kevinmaggi.github.io"
 
+# Theme settings
+theme: minimal-mistakes-jekyll
+
 # Build settings
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-compose
-
-# Theme settings
-theme: minimal-mistakes-jekyll
 
 
 # Exclude from processing.
@@ -58,3 +76,52 @@ title_separator: "|"
 #subtitle: ""
 name: "Squadra di Matematica del Kope"
 repository: "KevinMaggi/Squadra-di-Matematica-del-Kope"
+
+# Appearence
+# teaser: /assets/images/teaser_image.png # TODO
+logo: "/assets/images/masthead.png"
+masthead_title: "Squadra di Matematica del Kope"
+
+# Functionalities
+enable_copy_code_button: false
+atom_feed:
+  hide: true
+search: true
+search_full_content: true
+search_provider: lunr
+lunr:
+  search_within_pages: true
+  
+# SEO
+# TODO
+
+# Author
+author:
+
+# Footer
+footer:
+  links:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://www.facebook.com/mate.kope"
+
+# Year collection
+collections:
+  years:
+    output: true
+    permalink: /:collection/:path/
+
+# Frontmatter defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
+      
+compress_html:
+  clippings: all
+  ignore:
+    envs: development  # disable compression in dev environment

@@ -1,7 +1,32 @@
-header:
-  - title: Cronistoria
-    url: /cronistoria
-  - title: Persone
-    url: /persone
-  - title: Palmares
-    url: /palmares
+main:
+  - title: Storia
+    url: /storia
+  - title: Identità
+    url: /identita
+  - title: Medagliere
+    url: /medagliere
+
+    
+identity:
+  - title: La nostra identità
+    children:
+      - title: Logo
+        url: /logo
+      - title: Maglie
+        url: /maglie
+      - title: Mentalità
+        url: /Mentalita
+      - title: Suole di Gauss
+        url: /Suole-di-Gauss
+        
+history:
+  - title: La nostra storia
+    children:
+      - title: Racconto
+        url: /racconto
+      - title: Cronistoria
+        url: /cronistoria
+      - title: Membri
+        url: /membri
+      - title: Annate
+        url: /years
